@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  piano:
+    container_name: playbook-piano
+    image: 139549850843.dkr.ecr.ap-southeast-1.amazonaws.com/playbook/piano:0.2.develop
+    ports:
+      - "20019:5000"

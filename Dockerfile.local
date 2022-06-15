@@ -1,0 +1,15 @@
+FROM nikolaik/python-nodejs
+
+ARG client_folder='/app/client/build'
+ARG note_url=http://localhost:20019/note
+
+ENV CLIENT_FOLDER=$client_folder
+ENV REACT_APP_NOTE_URL=$note_url
+
+WORKDIR /app
+COPY server/requirements.txt ./server/requirements.txt
+
+# Install Flask 
+RUN pip install -r server/requirements.txt
+
+EXPOSE 20019

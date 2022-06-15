@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-note-name-display {
+  font-size: 80px;
+  height: 120px;
+  font-weight: bold;
+}
+
+.App-note-loading {
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.LRS-config-data {
+  border-top: 1px solid black;
+}
+
+.User-greeting-message {
+  color: rgb(209, 209, 3);
+}
+
+.Task-completion-message {
+  color: green;
+  text-decoration: underline;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
